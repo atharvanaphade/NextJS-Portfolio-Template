@@ -32,6 +32,7 @@ export default function Home() {
               <Center alignItems='center' marginLeft={['50px', 'auto', 'auto']}>
                 <HStack spacing={5}>
                   <Image
+                    alt='Profile'
                     borderRadius='full'
                     fit='cover'
                     boxSize='150px'

@@ -1,17 +1,13 @@
 import { Center, Stack, Text, VStack } from '@chakra-ui/layout'
-import { Box } from '@chakra-ui/react'
+import { Box, Link } from '@chakra-ui/react'
 import { Button } from '@chakra-ui/button'
-import Head from 'next/head'
-import Link from 'next/link';
 import Animation from '../components/AnimationContainer';
+import MetaComponent from '../components/metaTagsComponent';
 
 export default function Home() {
   return (
     <Animation>
-        <Head>
-          <title>Not Found | Atharva Naphade | Software Engineer</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
+        <MetaComponent page='Not Found' />
         <Box bg='transparent' height={['1080', '640', '720']} alignItems='center'>
           <VStack py={180} px='auto' spacing={5} direction={['column', 'column', 'row']}>
               <Center alignItems='center' marginLeft={['auto', 'auto', 'auto']}>
