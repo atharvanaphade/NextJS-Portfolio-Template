@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Globe from '../components/Globe';
 import Layout from '../components/Layout';
+import Script from 'next/script'
 
 const colors = {
     brand: {
@@ -20,9 +21,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-    <Head>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
-    </Head>
+    <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></Script>
     <ChakraProvider>
       <Globe>
           <Layout>
