@@ -1,5 +1,4 @@
 import '../styles/globals.css'
-import Head from 'next/head';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Globe from '../components/Globe';
 import Layout from '../components/Layout';

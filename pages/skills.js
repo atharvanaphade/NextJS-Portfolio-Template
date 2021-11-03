@@ -1,7 +1,6 @@
 import { Button } from "@chakra-ui/button";
 import { Box, VStack, Text } from "@chakra-ui/layout";
 import { Heading, Flex, SimpleGrid, useColorModeValue, Stack, Link } from "@chakra-ui/react";
-import Head from 'next/head';
 import React from "react";
 import Animation from "../components/AnimationContainer";
 import skills from "../data/skillData";

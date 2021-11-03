@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Link, Flex, Stack, Heading, Text, Badge, VStack, Button, useColorModeValue, List, ListItem, ListIcon } from '@chakra-ui/react';
-import { CheckCircleIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import { Box, Link, Text, VStack, Button, List, ListItem, ListIcon } from '@chakra-ui/react';
+import { CheckCircleIcon } from "@chakra-ui/icons";
 import Animation from "../components/AnimationContainer";
 import ProjectsFeature from "../components/ProjectsFeature";
 import MetaComponent from "../components/metaTagsComponent";
