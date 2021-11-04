@@ -58,9 +58,11 @@ export default function Home() {
                         ease: 'easeInOut'
                       }}
                       >
-                      <Button _hover={{ bg: 'transparent' }} size='xl' bg='transparent' variant='ghost'>
-                        <Icon name={link.name} />
-                      </Button>
+                      <Link href={link.link}>
+                        <Button _hover={{ bg: 'transparent' }} size='xl' bg='transparent' variant='ghost'>
+                          <Icon name={link.name} />
+                        </Button>
+                      </Link>
                     </motion.div>
                   </Box>
                 ))}

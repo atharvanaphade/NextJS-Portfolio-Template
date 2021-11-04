@@ -1,7 +1,7 @@
 const exp = [
     {
-        name: 'Clairvoyant LLC',
-        years: 'October 20201 - Present',
+        name: 'Clairvoyant',
+        years: 'October 2021 - Present',
         position: 'Software Engineering Intern',
         type: 'Internship',
         place: 'Pune, IN',
