@@ -6,24 +6,10 @@ import MetaComponent from "../components/metaTagsComponent";
 import fetcher from '../components/fetcher';
 import useSWR from "swr";
 
-const getRecentlyPlayed = () => {
-    const { data, error } = useSWR('/api/recently-played', fetcher);
-
-    if (error) {
-        return {
-        recentlyPlayed: null,
-        };
-    }
-
-    return {
-        recentlyPlayed: data,
-    };
-};
-
 const Social = () => {
     const { data, error } = useSWR('/api/now-playing', fetcher);
 
-    const { recentlyPlayed } = getRecentlyPlayed();
+    const { recentlyPlayed, errorRP } = useSWR('/api/recently-played', fetcher);
 
     console.log(recentlyPlayed);
     console.log(data);
