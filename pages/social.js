@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, VStack, Text, } from "@chakra-ui/layout";
+import { Box, VStack, Text, Stack, List, ListItem, } from "@chakra-ui/layout";
 import { Link, Button } from '@chakra-ui/react';
 import Animation from "../components/AnimationContainer";
 import MetaComponent from "../components/metaTagsComponent";
@@ -8,25 +8,25 @@ import useSWR from "swr";
 
 const getRecentlyPlayed = () => {
     const { data, error } = useSWR('/api/recently-played', fetcher);
-  
+
     if (error) {
-      return {
+        return {
         recentlyPlayed: null,
-      };
+        };
     }
-  
+
     return {
-      recentlyPlayed: data,
+        recentlyPlayed: data,
     };
-  };
+};
 
 const Social = () => {
-    const { data, isLoading, error } = useSWR('/api/recently-played', fetcher);
+    const { data, error } = useSWR('/api/now-playing', fetcher);
 
-    const { recentyPlayed } = getRecentlyPlayed();
+    const { recentlyPlayed } = getRecentlyPlayed();
 
-    console.log("Now Playing: " + data);
-    console.log("Recently Played : " + recentyPlayed);
+    console.log(recentlyPlayed);
+    console.log(data);
 
     return(
         <Animation>
@@ -51,6 +51,21 @@ const Social = () => {
                             </Button>
                         </Link>
                     </Box>
+                    <Stack spacing={10} direction={['column', 'column', 'row']}>
+                        {data && recentlyPlayed ? (
+                            <List spacing={3} w='20%'>
+                                <ListItem>
+                                    <Text color='whiteAlpha.800'>
+                                        {data.title}
+                                    </Text>
+                                </ListItem>
+                            </List>
+                        ) : (
+                            <Text color='whiteAlpha.800'>
+                                Error
+                            </Text>
+                        )}
+                    </Stack>
                     <Box py={30} px={[3, 3, 20]} alignSelf='flex-end'>
                         <Link href='/'>
                             <Button _hover={{ bg: 'whiteAlpha.300' }} color='whiteAlpha.800' variant='outline'>

@@ -17,6 +17,12 @@ const skills = {
         {name: 'Kubernetes', color: 'green'},
         {name: 'Tensorflow', color: 'teal'},
     ],
+    misc: [
+        {name: 'AWS', color: 'yellow'},
+        {name: 'Azure', color: 'blue'},
+        {name: 'GCP', color: 'purple'},
+        {name: 'Blender', color: 'red'},
+    ]
 };
 
 export default skills;

@@ -2,7 +2,7 @@ import querystring from 'querystring';
 
 const client_id = '977a77f9d4f5414086bce7dd135edf24';
 const client_secret = 'fa3d9e1a424a44538b337f5376898a81';
-const refresh_token = 'BQDj0FqL_8ZhF_WVhfY7P9RElxD6UFwv_uN6YKvp2yRnbAoElclcJk1bXBLD0B5hB2frcEBA4Nt13dPgygZCWAUedU3HkpcM1aX0NwIO5Lkbw_YNo7lSE';
+const refresh_token = 'AQDny3J-Wg2ZWAeShHgtpASyQcR1tMVSabU3tC7yJcCdoGNqN-zFRjBAOUduPEEzt7Zl_TXV3UZGNNdfnlcLKBJflMjhymPXNYglLT-pWVqH83lmYyoNnEUhPX4V1UwsYvE';
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
@@ -18,11 +18,11 @@ const getAccessToken = async () => {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
         body: querystring.stringify({
-        grant_type: 'refresh_token',
-        refresh_token,
+            grant_type: 'refresh_token',
+            refresh_token,
         }),
     });
-
+    
     return response.json();
 };
 

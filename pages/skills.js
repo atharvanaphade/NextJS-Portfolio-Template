@@ -52,7 +52,7 @@ const Skills = () => {
                             alignSelf='center'
                         >
                         <Box w='full' py='0' mx='auto'>
-                        <SimpleGrid columns={{ base: 1, md: 3 }} gap={[16, 8]}>
+                        <SimpleGrid columns={{ base: 1, md: 4 }} gap={[16, 8]}>
                             <Box
                             rounded={'lg'}
                             shadow={'md'}
@@ -136,6 +136,36 @@ const Skills = () => {
                             </Flex>
                             <Stack direction='column' p='6' spacing='3' flexGrow='1'>
                                 {skills.tools.map(item => (
+                                    <Feature color={item.color} key={item.name}>
+                                        {item.name}
+                                    </Feature>
+                                ))}
+                            </Stack>
+                            </Box>
+
+                            <Box
+                            rounded={'lg'}
+                            shadow={'md'}
+                            bg={useColorModeValue('gray.100', 'gray.900')}>
+                            <Flex
+                                direction='column'
+                                justify='center'
+                                align='center'
+                                p='6'
+                                borderBottomWidth='1px'
+                                borderColor={useColorModeValue('gray.200', 'gray.600')}>
+                                <Text
+                                mb={1}
+                                fontSize={{ base: 'sm', lg: 'xl' }}
+                                fontWeight='bold'
+                                letterSpacing='widest'
+                                textTransform='uppercase'
+                                color={useColorModeValue('gray.700', 'gray.400')}>
+                                Misc.
+                                </Text>
+                            </Flex>
+                            <Stack direction='column' p='6' spacing='3' flexGrow='1'>
+                                {skills.misc.map(item => (
                                     <Feature color={item.color} key={item.name}>
                                         {item.name}
                                     </Feature>
