@@ -3,8 +3,31 @@ import { Box, VStack, Text, } from "@chakra-ui/layout";
 import { Link, Button } from '@chakra-ui/react';
 import Animation from "../components/AnimationContainer";
 import MetaComponent from "../components/metaTagsComponent";
+import fetcher from '../components/fetcher';
+import useSWR from "swr";
+
+const getRecentlyPlayed = () => {
+    const { data, error } = useSWR('/api/recently-played', fetcher);
+  
+    if (error) {
+      return {
+        recentlyPlayed: null,
+      };
+    }
+  
+    return {
+      recentlyPlayed: data,
+    };
+  };
 
 const Social = () => {
+    const { data, isLoading, error } = useSWR('/api/recently-played', fetcher);
+
+    const { recentyPlayed } = getRecentlyPlayed();
+
+    console.log("Now Playing: " + data);
+    console.log("Recently Played : " + recentyPlayed);
+
     return(
         <Animation>
             <MetaComponent page='Social' />
