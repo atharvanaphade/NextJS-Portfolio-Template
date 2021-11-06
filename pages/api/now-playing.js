@@ -26,11 +26,11 @@ export default async function handler(_, res) {
       );
 
     return res.status(200).json({
-    album,
-    albumImageUrl,
-    artist,
-    isPlaying,
-    songUrl,
-    title,
+        album,
+        albumImageUrl,
+        artist,
+        isPlaying,
+        songUrl,
+        title,
     });
 }
