@@ -14,6 +14,7 @@ const Social = () => {
     const { data: recentlyPlayed, isLoadingRP, errorRP } = useSWR('/api/recently-played', fetcher);
 
     return(
+
         <Animation>
             <MetaComponent page='Social' />
             <Box bg='transparent'>
