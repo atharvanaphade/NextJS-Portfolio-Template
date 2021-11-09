@@ -6,7 +6,7 @@ import Animation from "../components/AnimationContainer";
 import MetaComponent from "../components/metaTagsComponent";
 import fetcher from '../components/fetcher';
 import useSWR from "swr";
-import { IoMusicalNotesOutline, IoMusicalNoteOutline } from 'react-icons/io5';
+import { IoMusicalNotesOutline, IoMusicalNoteOutline, IoLogoInstagram, IoGitBranch, IoLogoLinkedin, IoLogoWordpress, IoLogoGithub, IoLogoMedium } from 'react-icons/io5';
 
 const Social = () => {
     const { data, isLoading, error } = useSWR('/api/now-playing', fetcher);
@@ -18,7 +18,7 @@ const Social = () => {
         <Animation>
             <MetaComponent page='Social' />
             <Box bg='transparent'>
-                <VStack py={45} px='auto' spacing={5} direction={['column', 'column', 'row']}>
+                <VStack py={35} px='auto' spacing={5} direction={['column', 'column', 'row']}>
                     <Box w='full' px={{ base: 10, lg: 4 }} mx='auto' textAlign='center'>
                         <Text
                             mb={2}
@@ -30,7 +30,7 @@ const Social = () => {
                             Social
                         </Text>
                     </Box>
-                    <Box py={30} px={[3, 3, 20]} alignSelf='flex-start'>
+                    <Box py={25} px={[3, 3, 20]} alignSelf='flex-start'>
                         <Link href='/projects'>
                             <Button _hover={{ bg: 'whiteAlpha.100' }} color='whiteAlpha.800' variant='outline'>
                                 Projects
@@ -38,7 +38,7 @@ const Social = () => {
                         </Link>
                     </Box>
                     <Stack spacing='24px' direction={['column', 'column', 'row']} alignSelf='center'>
-                        <Box bg='whiteAlpha.900' mx='auto' p={2} color='blackAlpha.800'>
+                        <Box width='100%' bg='whiteAlpha.900' mx='flex' px={2} color='blackAlpha.800'>
                             <Center mt={5}>
                                 <Image borderRadius="full" boxSize='70px' src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_App_Logo.svg/2048px-Spotify_App_Logo.svg.png" alt="spotify icon" />
                             </Center>
@@ -77,11 +77,26 @@ const Social = () => {
                                 </ListItem>
                             </List>
                         </Box>
-                        <Box bg='whiteAlpha.900' w='full' mx='auto' p={2} color='blackAlpha.800'>
-                            
+                        <Box bg='whiteAlpha.900' w='full' mx='125%' px={2} color='blackAlpha.800'>
+                            <VStack spacing={5} py={10}>
+                                <Button color='blackAlpha.700' leftIcon={<IoLogoInstagram />}>
+                                    Instagram
+                                </Button>
+                                <Button color='blackAlpha.700' leftIcon={<IoLogoGithub />}>
+                                    GitHub
+                                </Button>
+                                <Button color='blackAlpha.700' leftIcon={<IoLogoLinkedin />}>
+                                    LinkedIn
+                                </Button>
+                                <Button color='blackAlpha.700' leftIcon={<IoLogoWordpress />}>
+                                    Blog
+                                </Button>
+                            </VStack>
                         </Box>
-                        <Box bg='whiteAlpha.900' w='full' mx='auto' p={2} color='blackAlpha.800'>
-                            
+                        <Box bg='whiteAlpha.900' w='full' mx='125%' px={2} color='blackAlpha.800'>
+                            <Button align='center' color='blackAlpha.700' leftIcon={<IoLogoMedium />}>
+                                    Resume
+                            </Button>
                         </Box>
                     </Stack>
                     <Box py={30} px={[3, 3, 20]} alignSelf='flex-end'>
