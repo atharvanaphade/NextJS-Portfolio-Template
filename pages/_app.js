@@ -3,6 +3,9 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Globe from '../components/Globe';
 import Layout from '../components/Layout';
 import Script from 'next/script'
+import { DefaultSeo } from 'next-seo';
+
+import SEO from '../components/seo-config';
 
 const colors = {
     brand: {
@@ -27,6 +30,7 @@ function MyApp({ Component, pageProps }) {
               <Component {...pageProps} />
           </Layout>
       </Globe>
+      <DefaultSeo {...SEO} />
     </ChakraProvider>
     </>
   );
