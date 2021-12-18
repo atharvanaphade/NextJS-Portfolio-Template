@@ -1,6 +1,6 @@
 import React from "react";
-import { Heading, VStack, Box, Button, List, ListItem, ListIcon, Link } from "@chakra-ui/react";
-import Animation from "../components/AnimationContainer";
+import { Heading, VStack, Box, Button, List, ListItem, ListIcon } from "@chakra-ui/react";
+import Link from 'next/link';
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import ExpFeature from "../components/ExpProject";
 import MetaComponent from "../components/metaTagsComponent";
@@ -8,7 +8,7 @@ import exp from "../data/expData";
 
 const Experience = () => {
     return(
-        <Animation>
+        <>
             <MetaComponent page='Experience' />
             <Box bg='transparent' w='auto'>
                 <VStack py={45} px='auto' spacing={2} direction={['column', 'column', 'row']}>
@@ -50,7 +50,7 @@ const Experience = () => {
                     </Box>
                 </VStack>
             </Box>
-        </Animation>
+        </>
     )
 }
 

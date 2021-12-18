@@ -1,14 +1,14 @@
 import React from "react";
-import { Box, Link, Text, VStack, Button, List, ListItem, ListIcon } from '@chakra-ui/react';
+import { Box, Text, VStack, Button, List, ListItem, ListIcon } from '@chakra-ui/react';
+import Link from 'next/link';
 import { CheckCircleIcon } from "@chakra-ui/icons";
-import Animation from "../components/AnimationContainer";
 import ProjectsFeature from "../components/ProjectsFeature";
 import MetaComponent from "../components/metaTagsComponent";
 import projects from "../data/projectData";
 
 const Projects = () => {
     return(
-        <Animation>
+        <>
             <MetaComponent page='Projects' />
             <Box bg='transparent'>
                 <VStack py={45} px='auto' spacing={5} direction={['column', 'column', 'row']}>
@@ -57,7 +57,7 @@ const Projects = () => {
                     </Box>
                 </VStack>
             </Box>
-        </Animation>
+        </>
     )
 }
 

@@ -1,10 +1,10 @@
 import { Center, HStack, SimpleGrid, Text, VStack } from '@chakra-ui/layout'
-import { Box, Image, Link } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
+import Link from 'next/link';
 import { Button } from '@chakra-ui/button'
 import Icon from '../components/icons/Icon'
 import { motion } from 'framer-motion'
 import TypewriterComponent from 'typewriter-effect';
-import Animation from '../components/AnimationContainer';
 import about from '../data/aboutData'
 import MetaComponent from '../components/metaTagsComponent'
 
@@ -18,7 +18,7 @@ export default function Home() {
   ]
 
   return (
-    <Animation>
+    <>
         <MetaComponent page='Home' />
         <Box bg='transparent' alignItems='center'>
           <VStack pt={180} pb={125} px='auto' spacing={5} direction={['column', 'column', 'row']}>
@@ -89,6 +89,6 @@ export default function Home() {
             </SimpleGrid>
           </VStack>
         </Box>
-    </Animation>
+    </>
   )
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { Box, VStack, Text, Stack, List, ListItem, Heading, ListIcon, Center, } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 import { Link, Button } from '@chakra-ui/react';
-import Animation from "../components/AnimationContainer";
+// import Link from 'next/link';
 import MetaComponent from "../components/metaTagsComponent";
 import fetcher from '../components/fetcher';
 import useSWR from "swr";
@@ -15,7 +15,7 @@ const Social = () => {
 
     return(
 
-        <Animation>
+        <>
             <MetaComponent page='Social' />
             <Box bg='transparent'>
                 <VStack py={35} px='auto' spacing={5} direction={['column', 'column', 'row']}>
@@ -108,7 +108,7 @@ const Social = () => {
                     </Box>
                 </VStack>
             </Box>
-        </Animation>
+        </>
     )
 }
 

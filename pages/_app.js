@@ -3,9 +3,11 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import Globe from '../components/Globe';
 import Layout from '../components/Layout';
 import Script from 'next/script'
+import Animation from "../components/AnimationContainer";
 import { DefaultSeo } from 'next-seo';
 
 import SEO from '../components/seo-config';
+import { AnimatePresence } from 'framer-motion';
 
 const colors = {
     brand: {
@@ -19,19 +21,26 @@ const colors = {
 
 const theme = extendTheme({ colors });
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
 
   return (
     <>
-    <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></Script>
-    <ChakraProvider>
-      <Globe>
-          <Layout>
-              <Component {...pageProps} />
-          </Layout>
-      </Globe>
-      <DefaultSeo {...SEO} />
-    </ChakraProvider>
+    <AnimatePresence
+      exitBeforeEnter
+      onExitComplete={() => window.scrollTo(0, 0)}
+    >
+      <Animation key={router.route}>
+        <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></Script>
+          <ChakraProvider>
+            <Globe>
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
+            </Globe>
+            <DefaultSeo {...SEO} />
+        </ChakraProvider>
+      </Animation>
+    </AnimatePresence>
     </>
   );
 }

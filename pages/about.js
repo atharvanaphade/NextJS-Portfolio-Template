@@ -1,8 +1,8 @@
 import { Box, VStack, Text } from "@chakra-ui/layout";
-import Animation from "../components/AnimationContainer";
 import React from "react";
 import { Button } from "@chakra-ui/button";
-import { Heading, Link } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
+import Link from 'next/link';
 import about from "../data/aboutData";
 import MetaComponent from "../components/metaTagsComponent";
 
@@ -14,7 +14,7 @@ const variants = {
 
 const About = () => {
     return (
-        <Animation>
+        <>
             <MetaComponent page='About' />
             <Box bg='transparent'>
                 <VStack py={104} px='auto' spacing={5} direction={['column', 'column', 'row']}>
@@ -40,7 +40,7 @@ const About = () => {
                     </Box>
                 </VStack>
             </Box>
-        </Animation>
+        </>
     );
 }
 

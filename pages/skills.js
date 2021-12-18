@@ -1,8 +1,8 @@
 import { Button } from "@chakra-ui/button";
 import { Box, VStack, Text } from "@chakra-ui/layout";
-import { Heading, Flex, SimpleGrid, useColorModeValue, Stack, Link } from "@chakra-ui/react";
+import { Heading, Flex, SimpleGrid, useColorModeValue, Stack } from "@chakra-ui/react";
+import Link from 'next/link';
 import React from "react";
-import Animation from "../components/AnimationContainer";
 import skills from "../data/skillData";
 import MetaComponent from "../components/metaTagsComponent";
 
@@ -32,7 +32,7 @@ const Feature = (props) => {
 
 const Skills = () => {
     return(
-        <Animation>
+        <>
             <MetaComponent page='Skills' />
             <Box bg='transparent'>
                 <VStack py={45} px='auto' spacing={5} direction={['column', 'column', 'row']}>
@@ -184,7 +184,7 @@ const Skills = () => {
                     </Box>
                 </VStack>
             </Box>
-        </Animation>
+        </>
     );
 }
 
