@@ -1,5 +1,5 @@
 export default {
-    title: 'Athava Naphade | Software Developer',
+    title: 'Atharva Naphade | Software Developer',
     description: 'My portfolio is built with NextJS and Chakra-UI and Vercel.',
     cannonical: 'https://atharvanaphade.me/',
     noindex: true,
