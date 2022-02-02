@@ -1,5 +1,15 @@
 const exp = [
     {
+        name: 'Indian Institute of Technology, Madras',
+        years: 'January 2022 - Present',
+        position: 'Software Engineering Intern',
+        type: 'Internship',
+        place: 'Chennai, IN',
+        desc: [
+            'Helped in system architecture, UML modeling using C4 model and server sizing of a Data Engineering platform for NLP Data.',
+        ]
+    },
+    {
         name: 'Clairvoyant',
         years: 'October 2021 - Present',
         position: 'Software Engineering Intern',
