@@ -79,24 +79,36 @@ const Social = () => {
                         </Box>
                         <Box bg='whiteAlpha.900' w='full' mx='125%' px={2} color='blackAlpha.800'>
                             <VStack spacing={5} py={10}>
-                                <Button color='blackAlpha.700' leftIcon={<IoLogoInstagram />}>
-                                    Instagram
-                                </Button>
-                                <Button color='blackAlpha.700' leftIcon={<IoLogoGithub />}>
-                                    GitHub
-                                </Button>
-                                <Button color='blackAlpha.700' leftIcon={<IoLogoLinkedin />}>
-                                    LinkedIn
-                                </Button>
-                                <Button color='blackAlpha.700' leftIcon={<IoLogoWordpress />}>
-                                    Blog
-                                </Button>
+                                <Link href='https://www.instagram.com/atharvanaphade/'>
+                                    <Button color='blackAlpha.700' leftIcon={<IoLogoInstagram />}>
+                                        Instagram
+                                    </Button>
+                                </Link>
+                                <Link href='https://github.com/atharvanaphade/'>
+                                    <Button color='blackAlpha.700' leftIcon={<IoLogoGithub />}>
+                                        GitHub
+                                    </Button>
+                                </Link>
+                                <Link href='https://www.linkedin.com/in/atharva-naphade/'>
+                                    <Button color='blackAlpha.700' leftIcon={<IoLogoLinkedin />}>
+                                        LinkedIn
+                                    </Button>
+                                </Link>
+                                <Link href='https://blog.atharvanaphade.me/'>
+                                    <Button color='blackAlpha.700' leftIcon={<IoLogoWordpress />}>
+                                        Blog
+                                    </Button>
+                                </Link>
                             </VStack>
                         </Box>
                         <Box bg='whiteAlpha.900' w='full' mx='125%' px={2} color='blackAlpha.800'>
-                            <Button align='center' color='blackAlpha.700' leftIcon={<IoLogoMedium />}>
-                                    Resume
-                            </Button>
+                            <VStack spacing={5} py={10}>
+                                <Link href='https://bit.ly/atharvanaphade_resume'>
+                                    <Button align='center' color='blackAlpha.700' leftIcon={<IoLogoMedium />}>
+                                            Resume
+                                    </Button>
+                                </Link>
+                            </VStack>
                         </Box>
                     </Stack>
                     <Box py={30} px={[3, 3, 20]} alignSelf='flex-end'>

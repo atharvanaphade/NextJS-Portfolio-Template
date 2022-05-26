@@ -7,6 +7,7 @@ const exp = [
         place: 'Chennai, IN',
         desc: [
             'Helped in system architecture, UML modeling using C4 model and server sizing of a Data Engineering platform for NLP Data.',
+            'Was responsible for the deployment of the platform using Kubernetes and Docker using Azure services to build a scalable and a cost effective deployment solution.'
         ]
     },
     {
@@ -58,7 +59,7 @@ const exp = [
         type: 'Undergraduate',
         place: 'Pune, IN',
         desc: [
-            'Third Year Electronics and Telecommunications Engineering Student - CGPA 8.73 (Till Second Year).',
+            'Third Year Electronics and Telecommunications Engineering Student - CGPA 9.08 (Till Third Year).',
         ]
     },
 ];
