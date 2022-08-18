@@ -1,12 +1,12 @@
 export default {
     title: 'Atharva Naphade | Software Developer',
     description: 'My portfolio is built with NextJS and Chakra-UI and Vercel.',
-    cannonical: 'https://atharvanaphade.me/',
+    cannonical: 'https://atharvanaphade.ml/',
     noindex: true,
     openGraph: {
         type: 'website',
         locale: 'en_IE',
-        url: 'https://atharvanaphade.me/',
+        url: 'https://atharvanaphade.ml/',
         images: [
             {
             url: '/android-chrome-512x512.png',
@@ -18,7 +18,7 @@ export default {
             url: '/android-chrome-192x192.png',
             width: 192,
             height: 192,
-            alt: 'lester cardoz portfolio',
+            alt: 'atharva naphade portfolio',
             },
         ],
         site_name: 'Atharva Naphade'
