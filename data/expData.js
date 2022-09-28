@@ -17,6 +17,7 @@ const exp = [
         position: 'Software Engineering Intern',
         type: 'Internship',
         place: 'Pune, IN',
+        href: '#',
         desc: [
             'Worked on a Customer relationship management platform, which involved creating database schemas, business logic, and UI/UX designs for the platform and used technologies like React Native, Django, Docker, PostgreSQL to implement the project.',
         ]
@@ -27,6 +28,7 @@ const exp = [
         position: 'Vice-Chairperson',
         type: 'Part-Time',
         place: 'Pune, IN',
+        href: '#',
         desc: [
             'Managed a team of 31 and conducted seminars and online events like programming contests, quizes, etc for university students with a footfall of over 500+.',
         ]
@@ -37,6 +39,7 @@ const exp = [
         position: 'Problem Setter',
         type: 'Part-Time',
         place: 'Pune, IN',
+        href: '#',
         desc: [
             'Curated and tested problems on Data Structures and Algorithms, which were solved by over 10,000 participants all over the world in online programming contests.',
         ]
@@ -47,6 +50,7 @@ const exp = [
         position: 'Student Member',
         type: 'Volunteer',
         place: 'Pune, IN',
+        href: '#',
         desc: [
             'Conducted Special Interest Groups(SIGs) on domains like Python, C/C++, Web Development for 100+ peers and juniors.',
             'Curated and hosted programming contests on well known programming platforms like CodeChef and Hackerrank, which were played by 500+ participants.',
@@ -59,6 +63,7 @@ const exp = [
         position: 'Engineering',
         type: 'Undergraduate',
         place: 'Pune, IN',
+        href: '#'
         desc: [
             'Third Year Electronics and Telecommunications Engineering Student - CGPA 9.08 (Till Third Year).',
         ]
