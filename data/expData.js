@@ -5,6 +5,7 @@ const exp = [
         position: 'Software Engineering Intern',
         type: 'Internship',
         place: 'Chennai, IN',
+        href: 'https://ai4bharat.org/shoonya',
         desc: [
             'Helped in system architecture, UML modeling using C4 model and server sizing of a Data Engineering platform for NLP Data.',
             'Was responsible for the deployment of the platform using Kubernetes and Docker using Azure services to build a scalable and a cost effective deployment solution.'
