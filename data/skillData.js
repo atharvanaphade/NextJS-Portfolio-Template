@@ -2,7 +2,7 @@ const skills = {
     languages: [
         {name: 'Python', color: 'red'},
         {name: 'C/C++', color: 'pink'},
-        {name: 'Java', color: 'yellow'},
+        {name: 'GoLang', color: 'yellow'},
         {name: 'JavaScript', color: 'green'},
     ],
     frameworks: [
