@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Link, Flex, Stack, Heading, Text, Badge, VStack, Button, useColorModeValue, List, ListItem, ListIcon } from '@chakra-ui/react';
+import { Box, Link, Flex, Stack, Heading, Text, Badge, useColorModeValue } from '@chakra-ui/react';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 const ProjectsFeature = ({ title, href, languages, children }) => {

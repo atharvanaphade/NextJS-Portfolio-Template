@@ -29,7 +29,8 @@ const Experience = () => {
                                 years={item.years}
                                 position={item.position}
                                 type={item.type}
-                                place={item.place}>
+                                place={item.place}
+                                href={item.href}>
                                     <List spacing={3}>
                                         {item.desc.map(des => (
                                             <ListItem key={des}>

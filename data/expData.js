@@ -63,7 +63,7 @@ const exp = [
         position: 'Engineering',
         type: 'Undergraduate',
         place: 'Pune, IN',
-        href: '#'
+        href: '#',
         desc: [
             'Third Year Electronics and Telecommunications Engineering Student - CGPA 9.08 (Till Third Year).',
         ]
