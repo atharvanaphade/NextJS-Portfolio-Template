@@ -94,7 +94,7 @@ const Social = () => {
                                         LinkedIn
                                     </Button>
                                 </Link>
-                                <Link href='https://blog.atharvanaphade.me/'>
+                                <Link href='https://blog.atharvanaphade.ml/'>
                                     <Button color='blackAlpha.700' leftIcon={<IoLogoWordpress />}>
                                         Blog
                                     </Button>
