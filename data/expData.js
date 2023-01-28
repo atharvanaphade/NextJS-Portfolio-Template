@@ -1,7 +1,29 @@
 const exp = [
     {
+        name: 'Samsung Semiconductor India',
+        years: 'Jan 2022 - Present',
+        position: 'Intern',
+        type: 'Internship',
+        place: 'Bangalore, IN',
+        href: 'https://semiconductor.samsung.com/',
+        desc: []
+    },
+    {
+        name: 'RudderStack',
+        years: 'July 2022 - Oct 2022',
+        position: 'Software Engineer Intern',
+        type: 'Internship',
+        place: 'San Francisco, CA (Remote)',
+        href: 'https://www.rudderstack.com/',
+        desc: [
+            'Worked closely with the Data Apps Team to write softwares in GoLang to transform data which is used in a Customer Data Platform.',
+            'Solved issues in code written in GoLang for a warehouse transformation platform which implements methods such as Id Stitching.',
+            'This helped the company complete sprints and pull launch of the platform by 1 month.',
+        ]
+    },
+    {
         name: 'Indian Institute of Technology, Madras',
-        years: 'January 2022 - Present',
+        years: 'January 2022 - July 2022',
         position: 'Software Engineering Intern',
         type: 'Internship',
         place: 'Chennai, IN',
