@@ -6,7 +6,9 @@ const exp = [
         type: 'Internship',
         place: 'Bangalore, IN',
         href: 'https://semiconductor.samsung.com/',
-        desc: []
+        desc: [
+            'Working in the WiFi and Bluetooth team to write firmware for the Exynos SoC used in Flagship Samsung phones.',
+        ]
     },
     {
         name: 'RudderStack',
