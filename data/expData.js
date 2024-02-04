@@ -1,7 +1,18 @@
 const exp = [
     {
         name: 'Samsung Semiconductor India',
-        years: 'Jan 2022 - Present',
+        years: 'Aug 2023 - Present',
+        position: 'Senior Engineer',
+        type: 'Full-Time',
+        place: 'Bangalore, IN',
+        href: 'https://semiconductor.samsung.com/',
+        desc: [
+            'Woring in the Connectivity Solutions Team to write firmware for the Exynos SoC used in the flagship Samsung phones,',
+        ]
+    },
+    {
+        name: 'Samsung Semiconductor India',
+        years: 'Jan 2023 - July 2023',
         position: 'Intern',
         type: 'Internship',
         place: 'Bangalore, IN',
